@@ -1,0 +1,107 @@
+body {
+    margin-top: 5rem;
+}
+
+.container {
+    max-width: 100vw;
+}
+
+.section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* margin: auto; */
+    padding: 4rem 0 7rem;
+}
+
+table {
+    max-width: 90%;
+    margin: auto;
+}
+
+/* .item{
+    display: flex;
+    flex-direction: column;
+    margin: 3em;
+    max-width: 250px;
+}
+
+.item>input{
+    border-radius: 5px;
+}
+
+.title{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    
+}
+label{
+    display: flex;
+    justify-content: center;
+    font-size: large;
+    font-weight: bold;
+}*/
+#tasadiv {
+    display: block;
+    visibility: visible;
+    float: right;
+}
+
+/* label[for=tasa]{
+    visibility: visible;
+    float: right;
+} */
+/*
+#tabla-montos{
+    display: flex;
+    flex-direction: column;
+}
+
+#totales{
+    display: none;
+}
+
+button{
+    background-color: #0275d8;
+    color:white;
+    border-radius: 0.5em;
+    width: 10rem;
+}
+
+table, th, td {
+border: 1px solid black;
+text-align: center;
+}
+
+#agregar{
+    margin-top: 2.3rem;
+    /* width: 10rem; */
+/* } */
+
+#reiniciar {
+    /* width: 10rem; */
+    margin-top: 1%;
+    align-self: center;
+}
+
+.capitalize {
+    text-transform: capitalize;
+}
+
+.section {
+    padding: 8rem 0 7rem;
+    text-align: center;
+}
+
+#ocultar-bcv {
+    position: sticky;
+    top: 0;
+}
+
+.uno {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+}

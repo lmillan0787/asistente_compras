@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calulos de Precios USD /BSD</title>
+    <link rel="stylesheet" href="./assets/css/normalize.css" />
+    <link rel="stylesheet" href="./assets/css/skeleton.css" />
+    <link rel="stylesheet" href="./assets/style.css" />
+  </head>
+  <body>
+    <div class="container uno">
+        <button id="ocultar-bcv" onclick="">Ocultar tasa</button>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="eleven columns text-center">
+          <h1>Asistente de compras</h1>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="four columns">
+          <label for="nombre">Nombre de Producto</label>
+          <input type="text" id="nombre" class="capitalize" />
+        </div>
+        <div class="four columns">
+          <label for="precio">Precio USD</label>
+          <input type="text" id="precio" oninput="calcPrice()" />
+        </div>
+        <div class="four columns">
+          <label for="totalbs">Precio BsD</label>
+          <input type="text" id="totalbs" readonly />
+        </div>
+      </div>
+    </div>
+    <div class="">
+      <div class="container">
+        <div class="row section">
+          <button
+            type="button"
+            class="button button-primary two columns"
+            id="agregar"
+          >
+            +
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div id="tabla-montos">
+      <table class="u-full-width">
+        <tr>
+          <th>Nombre Producto</th>
+          <th>Monto USD</th>
+          <th>Monto BSD</th>
+        </tr>
+        <tbody class="montos"></tbody>
+      </table>
+      <div class="container">
+        <div class="row section">
+          <button id="reiniciar" type="button">Borrar Productos</button><br />
+        </div>
+      </div>
+      <div class="container" id="totales">
+        <div class="row">
+          <div class="six columns">
+            <label for="totalapagarusd"> Total a pagar USD</label>
+            <input type="text" readonly id="totalapagarusd" />
+          </div>
+          <div class="six columns">
+            <label for="totalapagarbsd">Total a pagar BSD</label>
+            <input type="text" readonly id="totalapagarbsd" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="six columns">
+          <label for="efectivo">Efectivo</label>
+          <input type="text" id="efectivo" oninput="calcCambio()" />
+        </div>
+        <div class="six columns">
+          <label for="cambio">Cambio</label>
+          <input type="text" id="cambio" readonly />
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="./assets/jquery-3.6.3.min.js"></script>
+  <script src="./assets/index.js"></script>
+</html>
